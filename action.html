@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat&display=swap">
+	<title>Home</title>
+</head>
+<body>
+	<header>
+	<div class = "header">
+		<a class = "skip" href="#main">Skip to Main Content</a>
+		<div class="nav">
+		<nav>
+			<div class="logo">
+				<img src="images/favicon.png" alt="logo" id = "logo"></div>
+			<ul class="nav_links">
+				<li class="navitem"><a href = "index.html">Home</a></li>
+				<li class = "navitem"><a href = "diet.html">Diet</a></li>
+				<li class = "navitem"><a href = "pollution.html">Pollution</a></li>
+				<li class = "current"><a href = "action.html">Action</a></li>				
+			</ul>
+		</nav>
+
+		<div class="title">
+		<h1>Here are some things that make a difference!</h1></div>
+	</header>
+
+	<main id="main">	
+
+		<div class="calculate">
+		<p>First, begin by calculating your ecological footprint <a href = "https://www.nature.org/en-us/get-involved/how-to-help/carbon-footprint-calculator/?redirect=https-301">Ecological Footprint Calculator.</a> This will help you learn which areas of your life to focus on!</p>
+		<br>
+		</div>
+
+		<div class="tips">
+        <h2>Reduce travel/transportation</h2>
+        <p>consider carpool, biking, flying less. A little known fact is how much your ecological footprint can be reduced by flying less! (one flight is on average 1/18th of the average American’s ecological footprint)</p>
+		<img id="plane" src="images/plane.jpeg" alt="" />
+	</div>
+
+        <div class="tips">
+        <h2>Eat less meat</h2>
+        <p>the production of meat uses huge amounts of energy, land, and water. Cows (especially dairy and beef cows) give off huge amounts of methane (CH4) in their waste.</p>
+        <ul>
+			<li>Reduce dairly consumption</li>
+			<li>Deep net fishing and fish farms are harmful to ocean ecosystems</li>
+		  </ul>
+		  <img id="vegetables" src="images/vegetables.jpeg" alt="" />
+
+        </div>
+
+        <div class="tips">
+        <h2>Shop to reduce your waste</h2>
+        <ul>
+			<li>Shop in bulk to reduce packaging waste</li>
+            <li>Plan your shopping before you go</li>
+            <li>Don't buy single use plastics (water bottles, plastic bags etc.)</li>
+            <li>Shop from sustainbale sources and stores, here's a list: <a href="https://www.sustainablejungle.com/sustainable-living/ethical-online-shopping/">Sustainable Stores.</a></li>
+          </ul>
+        </div>
+
+        <div class="tips">
+          <h2>Evaluate your home's efficiency</h2>
+          <ul>
+              <li>Look into installing solar panels</li>
+              <li>Buy energy efficient light bulbs and turn off lights that aren't in use</li>
+			</ul>
+			<img id="light" src="images/light.jpeg" alt="" />
+        </div>
+	</main>
+
+	<form action="https://formspree.io/f/xqkwzrvy" method="POST">
+		<fieldset>
+		  <legend>Contact Me</legend>
+	  
+		<div class="container">
+		  <label for="fullname">Your Name</label>
+		  <input type="text" id = "fullname" placeholder="Enter Your Name" name="user_name"><br>
+	  
+		  <label for = "email">Your Email</label>
+		  <input id = "email" placeholder="Enter your email" type = "email" name="user_email"><br>
+	  
+		  <label for = "message">Leave A Message</label>
+		  <textarea placeholder="Enter your message" id="message" required name="text"></textarea><br>
+			
+		  <br>
+		  <label for="remember">Remember me</label>
+		  <input type="checkbox" checked="checked" id="remember" name="REMEMBER"><br>
+	  
+	  
+		  <input type="submit" value="Submit"></input>    
+		</div>
+	  </fieldset>
+	  </form>
+
+	<footer>
+		<p>Victoria Stahl &copy; 2021</p>
+	</footer>
+</body>
+</html>
