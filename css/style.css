@@ -1,0 +1,409 @@
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+  background-color: white;
+  font-family: 'Dela Gothic One', sans-serif;
+  color: #074407;
+	background-position: center;
+	text-align: center;
+}
+
+a:link{
+	text-decoration: none;
+	color: #074407;
+}
+
+a:hover{
+	text-decoration: none;
+	border-bottom: 1px solid #074407;
+}
+
+a:visited{
+	color: #074407;
+}
+
+#main{
+  background-color: #eaf1ec;
+  font-size: 24px;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-color: white;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav li{
+  display:inline;
+  padding-right:20px;
+
+}
+
+nav{
+  display: flex;
+  background-color: #dff3d5;
+  padding: 25px 0; 
+  text-align: left;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 0px 15px 15px 0px;
+  animation-name: logo;
+  animation-duration: 1s;
+  animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+  from { transform: translate3d(0, 0, 0);}
+  to { transform: translate3d(0, 30px, 0);}
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 7px;
+  position: absolute;
+  top: -50px;
+}
+a.skip:focus{
+  top: 10px;
+}
+
+
+footer{
+  background-color: #dff3d5;
+  color: #074407;
+  padding-top: 30px;
+  text-align: center;
+}
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+.current{
+    text-transform: uppercase;
+}
+
+/* index */
+
+.sustainability{
+  padding: 20px;
+}
+
+.sustainability img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  border: 10px solid black;
+}
+
+/* diet */
+
+.journey{
+  padding: 10px;
+  border: 4px solid #074407;
+  margin: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.journey strong{
+  font-weight: 700px;
+}
+
+.footprint{
+  font-family: 'Dela Gothic One', sans-serif;
+  padding: 20px;
+  font-weight: bold;
+}
+
+}
+.flipcard img{
+  padding: 7px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 540px;
+  height: 210px;
+  border: 7px solid #55868a;
+  perspective: 1000px; 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:#7fb6bb;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back h1, p{
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.sea{
+   /* The image used */
+   background-image: url("sea1.jpg");
+   background-image: url("sea2.jpg");
+   background-image: url("sea3.jpg");
+   background-image: url("sea4.jpg");
+
+   /* Set a specific height */
+   min-height: 500px;
+ 
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* pollution */
+
+.green h1{
+  font-size: 40px;
+}
+.green img{
+  padding: 20px;
+  align-content: center;
+}
+
+.greenhouse-gas-image img{
+  align-content: center;
+}
+
+.green hr{
+  height: 6px;
+  color: #074407;
+}
+
+
+.grid{
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto;
+  display: grid;
+}
+
+.gallery{
+  display: grid;
+	grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+	height: 100%;
+}
+
+.gallery img{
+  width: 100%;
+}
+#gallery{
+  text-align: center;
+}
+
+/* action */
+.calculate a{
+  text-decoration: underline #074407;
+}
+
+.tips{
+  border: 4px solid #074407;
+  margin: 5px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+
+}
+
+.tips h2{
+  font-size: 32px;
+}
+
+ul{
+  margin-left: 40px;
+  list-style: circle;
+  /* list-style-image: ; */
+}
+
+.tips img{
+  width: 400px;
+}
+
+form {
+  margin: 10px;
+  border: 3px solid #074407;
+  background-color: #dff3d5;
+}
+
+legend{ 
+  font-size: 125%;
+  font-family: 'Dela Gothic One', sans-serif;
+  color: #074407
+  text-transform: uppercase;
+  text-align: center;
+}
+
+label{
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  margin-left:10px;
+  width:20%;
+}
+input {
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form:focus{
+  border: 6px solid red;
+}
+
+textarea{
+}
+
+input[type=checkbox]{
+}
+
+input[type=submit] {
+  background-color: #074407;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/*phone*/
+@media screen and (max-width: 767px){
+	.main{
+		font-size: 24px;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: left;
+	}
+
+	nav{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0; 
+    align-items: center;
+    flex-wrap: wrap;
+	}
+
+	.navitem{
+		display: flex;
+		font-size: 15px;
+  }
+
+  .logo{
+    align-items: right;
+  }
+  
+  .gallery{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 100%;
+  }
+}
+
+/*tablet*/
+@media screen and (min-width: 760px) and (max-width: 1024px){
+  .title h1{
+    font-size: 34px;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 35px;
+    flex-wrap: nowrap;
+	}
+
+	.navitem{
+    display: flex;
+    flex-direction: row;
+		font-size: 15px;
+  }
+
+  .gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 100%;
+  }
+
+  .logo{
+    align-items: right;
+  }
+}
+
+/*reduced motion*/
+@media screen and (prefers-reduced-motion: reduce){
+      .logo{
+		animation: none;
+	}
+  }
